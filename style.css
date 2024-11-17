@@ -1,0 +1,37 @@
+/* color for the website  */
+
+/* #F82B6F
+
+#2B89F8
+
+#F8A82B
+
+#28F82B
+
+#8A2BF8
+
+#2B2B2B 
+
+Typography
+
+font-family: Mona Sans;
+font-size: 48px;
+font-weight: 600;
+line-height: 46.42px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+
+*/
+*{
+    font-family: Mona Sans;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 46.42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
