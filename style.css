@@ -1,37 +1,118 @@
 /* color for the website  */
-
-/* #F82B6F
-
-#2B89F8
-
-#F8A82B
-
-#28F82B
-
-#8A2BF8
-
-#2B2B2B 
-
-Typography
-
-font-family: Mona Sans;
-font-size: 48px;
-font-weight: 600;
-line-height: 46.42px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-
+/* #F82B6F #2B89F8 #F8A82B #28F82B #8A2BF8 #2B2B2B 
 
 */
 *{
     font-family: Mona Sans;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 46.42px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+}
+
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* header css */
+.header{
+    display: flex;
+    gap: 80px;;
+}
+.top-navigation{
+    display: flex;
+    align-items: center;
+    max-width: 1512px;
+    height: 104px;
+    justify-content: space-between;
+}
+.input-tag{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="F82B6F" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" fill="white"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    width: 499px;
+    height: 48px;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+button{
+    border: none;
+    background-color: white;
+    font-size: 17px;
+}
+.button {
+    padding-top: 13px;
+}
+.second-navigation{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    margin: 0 15px; /* Optional: Add some margin for spacing */ 
+}
+a.nav-link{
+    align-items: center;
+}
+nav.top-navigation{
+    flex-direction: column;
+}
+.last-img {
+    height: 23px;
+    width: 24px;
+}
+.first-span{
+    line-height: 18px;
+    margin: 10px;  
+    gap: 10px;
     
+}
+h1{
+    font-weight: 700;
+}
+
+.hero{
+    background-image: url('images/Hero\ Section.png');
+    display: flex;
+    height: 630px;
+    margin-top: 10px;
+}
+.hero-btn button {
+    width: 234px;
+    height: 54px;
+    background-color: #F2A44B;
+    color: white;
+}
+.call-text{
+    padding-left: 9px;
+}
+select.nav-select {
+    height: 46px;
+    width: 250px;
+    border: none;
+    background-color: #2B89F8;
+    color: white;
+    background-image: url('images/Icon\ Frame.png');
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: 10px center;
+    padding-left: 30px;
+}
+
+/* footer css code  */
+.bottom-section {
+    background-color: #454565;
+    color: white;
+}
+.bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content {
+    display: flex;
+    gap: 15px;
+}
+.bottom-text {
+    padding-top: 14px;
 }
