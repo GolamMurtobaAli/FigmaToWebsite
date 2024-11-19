@@ -3,10 +3,10 @@
 
 */
 *{
-    font-family: Mona Sans;
+    font-family: Lato;
 }
 
-.center-flex{
+.center-flex , .design-section, .design-section .design-text .first-p span, .design-section .design-text .second-p , .design-section2,.design-section2 .design-text2 .second-p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,7 @@
     gap: 80px;;
 }
 .top-navigation{
+    background-image: url('images/Vector.png');
     display: flex;
     align-items: center;
     max-width: 1512px;
@@ -39,12 +40,18 @@ button{
     border: none;
     background-color: white;
     font-size: 17px;
+    font-family: lato;
 }
 .button {
     padding-top: 13px;
 }
 .second-navigation{
     display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    border-bottom: 0.6px solid #BBC5D0;
+    width: 1260px;
+    padding: 7px;
 }
 a{
     text-decoration: none;
@@ -53,6 +60,8 @@ a{
 }
 a.nav-link{
     align-items: center;
+    color: black;
+    font-size: 16px;
 }
 nav.top-navigation{
     flex-direction: column;
@@ -67,21 +76,69 @@ nav.top-navigation{
     gap: 10px;
     
 }
-h1{
-    font-weight: 700;
+p.hero-para{
+    font-size: 24px;
+    color: #5C6167;
+    line-height: 160%;
 }
-
-.hero{
-    background-image: url('images/Hero\ Section.png');
+p2{
+    font-size: 20px;
+    padding-bottom: 32px;
+    color: #2B89F8;
+    height: 14px;
+}
+p1{
+    font-family: Mona Sans;
+    font-weight: 600;
+    font-size: 46px;
+    width: 839px;
+    height: 94px;
+    line-height: 130%;
+    padding-bottom: 40px;
+    color: #37405F;
+}
+/* hero section  */
+.hero-text {
     display: flex;
-    height: 630px;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    width: 841px;
+    height: 256px;
+    padding-left: 105px;
+    line-height: 40px;
+    padding-top: 74px;
+}
+.hero{
+    display: flex;
     margin-top: 10px;
+    background-image: url('images/Hero\ Section\ \(1\).png');
+    background-repeat: no-repeat;
+}
+.hero-btn img{
+    padding-left: 171px;
+    height: 37.13px;
+    width: 44px;
 }
 .hero-btn button {
+    font-family: lato;
+    font-size: 24px;
     width: 234px;
     height: 54px;
     background-color: #F2A44B;
     color: white;
+    background: linear-gradient(to right, #F82D6F,#FFD04E);
+    opacity: 100%;
+    padding: 10px;
+}
+.hero-btn button .btn-img{
+    width: 16px;
+    height: 16px;
+}
+.hero-btn .btn1 button img{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
 }
 .call-text{
     padding-left: 9px;
@@ -97,8 +154,12 @@ select.nav-select {
     padding: 10px;
     background-position: 10px center;
     padding-left: 30px;
+    font-size: 18px;
 }
-
+.hero-img img {
+    width: 137%;
+    margin-left: -164px;
+}
 /* footer css code  */
 .bottom-section {
     background-color: #454565;
@@ -115,4 +176,73 @@ select.nav-select {
 }
 .bottom-text {
     padding-top: 14px;
+}
+
+/* design css */
+.design-section{
+    flex-direction: column;
+    
+}
+.design-section .design-text{
+    padding-top: 80px;
+}
+.design-section .first-p{
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    color: #37405F;
+}
+.design-section .second-p{
+    font-family: lato;
+    font-size: 24px;
+    color: #5C6167;
+}
+.design-section .design-img {
+ padding: 80px;
+ display: flex;
+ gap: 33px;
+ padding-left: 105px;
+ padding-right: 105px;
+}
+.design-section .design-img  .design-img1{
+    background-image: url('images/handsome-young-retro-man-dressed-shirt-lies-floor\ 1.png');
+    background-repeat: no-repeat;
+    width: 779px;
+    height: 440px;
+    font-size: 20px;
+    color: white;
+}    
+.design-section .design-img  .design-img2{
+    background-image: url('images/Rectangle\ 23.png');
+    background-repeat: no-repeat;
+    width: 490px;
+    height: 440px;
+    font-size: 20px;
+    color: white;
+    
+}
+.design-section .design-img span{
+    background-color: #1B1E39;
+    /* padding: 20px 16px 20px 16px; */
+    font-family: lato;
+    line-height: 120%;
+}
+
+.design-section2 .design-text2 .second-p{
+    font-family: Mona Sans;
+    font-size: 48px;
+    color: #37405F;
+    margin: 0;
+    padding: 0;
+}
+.design-section2 .design-text2{
+    flex-direction: column;
+}
+.design-section2 .design-text2 .design2-span{
+    color: #5C6167;
+    font-size: 24px;
+    font-family: lato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
