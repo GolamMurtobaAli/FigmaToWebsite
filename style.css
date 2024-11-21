@@ -5,11 +5,35 @@
 *{
     font-family: Lato;
 }
-
-.center-flex , .design-section, .design-section .design-text .first-p span, .design-section .design-text .second-p , .design-section2,.design-section2 .design-text2 .second-p{
+/* global css class */
+.center-flex {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.heading-span{
+    color: #5C6167;
+    font-size: 24px;
+    font-family: lato;
+}
+.heading-text{
+    font-family: Mona Sans;
+    font-size: 48px;
+    font-weight: 500;
+    color: #37405F;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    line-height: 57.6px;
+}
+.padding-top-bottom{
+    gap: 30px;
+    padding: 86px 0 86px ;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    
 }
 /* header css */
 .header{
@@ -198,11 +222,9 @@ select.nav-select {
     color: #5C6167;
 }
 .design-section .design-img {
- padding: 80px;
+ padding: 86px;
  display: flex;
  gap: 33px;
- padding-left: 105px;
- padding-right: 105px;
 }
 .design-section .design-img  .design-img1{
     background-image: url('images/handsome-young-retro-man-dressed-shirt-lies-floor\ 1.png');
@@ -227,22 +249,137 @@ select.nav-select {
     font-family: lato;
     line-height: 120%;
 }
-
-.design-section2 .design-text2 .second-p{
-    font-family: Mona Sans;
-    font-size: 48px;
-    color: #37405F;
-    margin: 0;
-    padding: 0;
-}
 .design-section2 .design-text2{
     flex-direction: column;
 }
-.design-section2 .design-text2 .design2-span{
+
+.headline-text{
+    font-family: Mona Sans;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.6px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #37405F;
+}
+.para-text{
+    font-family: Lato;
     color: #5C6167;
-    font-size: 24px;
-    font-family: lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+.design-section3 .design-img3{
+    display: flex;
+     flex-direction: row;
+}
+ .design-img3-part2{
+    gap: 30px;
+    padding: 0px 0px 86px 0px;
+}
+.deals-text1{
+    width: 636px;
+    height: 350px;
+    background-image: url('images/Deals\ Banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+}
+
+.deals-text2{
+    width: 636px;
+    height: 350px;
+    background-image: url('images/Deals\ Banner\ \(1\).png');
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+.design-img3{
+    gap: 30px;
+    padding: 86px 105px 86px 105px;
+}
+.deals-heading{
+    font-family: Mona Sans;
+font-size: 36px;
+font-weight: 600;
+line-height: 43.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding-left: 42px;
+}
+.deals-button{
+    font-family: Lato;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding: 13px 22px 13px 22px;
+color: white; 
+background-color: #353946; 
+width: 155px;
+height: 50px;
+margin-top: 30px;
+}
+.last-design{
+    padding-bottom: 86px;
+}
+.last-design-img{
+    width: 1302px;
+    height: 398px;
+    background-image: url('images/image_2024_11_20T12_13_55_568Z.png');
+    background-color: #FECAD5;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* footer css */
+.footer-content{
+    background-color: #F3F3F3;
+    max-width: 1512px;
+    height: 412px;
+    padding: 64px 105px 0px 105px;
+}
+footer p{
+    font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.box{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #37405F;
+}
+.bottom-text{
+    width: 1015px;
+    height: 22px;
+    
+}
+.payment-img{
+    width: 232px;
+    height: 30px;
+}
+.footer-bottom{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    width: 1302px;
+    height:84px;
+    gap: 55px;
+}
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
