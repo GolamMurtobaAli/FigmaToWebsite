@@ -7,7 +7,6 @@
 html{
     font-size: 10px;
 }
-
 /* global css class */
 .button-color a{
     font-family: Lato;
@@ -38,10 +37,8 @@ html{
     font-size: 4.8rem;
     font-weight: 500;
     color: #37405F;
-    margin: 0;
-    padding: 0;
-    gap: 0.8rem;
-    line-height: 5.76rem;
+    margin: 0rem;
+    gap: 0.75rem;
 }
 .padding-top-bottom{
     gap: 3rem;
@@ -79,10 +76,23 @@ html{
     display: flex;
      gap: 1rem;
 }
-
+.bottom-text{
+    width: 20.3rem;
+    height: 4.2rem;
+    font-size: 1.3rem;
+}
+/* global media query */
+@media (max-width:1024px){
+     .heading-text {
+        font-size:  2.4rem; 
+    }
+    .heading-span{
+        font-size: 1.4rem;
+    }
+}
 /* header css */
 .header{
-    display: flex;
+    /* display: flex; */
     gap: 13.6rem;
     max-width: 151.2rem;
     height: auto;
@@ -181,6 +191,7 @@ p1{
     padding-bottom: 4rem;
     color: #37405F;
 }
+
 /* hero section  */
 .first-btn{
     padding: 1rem;
@@ -208,6 +219,8 @@ p1{
     margin-top: 1rem;
     background-image: url('images/Hero\ Section\ \(1\).png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .hero-btn img{
     height: 3.713rem;
@@ -260,7 +273,7 @@ select.nav-select {
 /* hero section responsive css */
 
 @media only screen and (max-width: 1024px) {
-    .hero{
+    .hero {
         display: flex;
         flex-direction: column;
         /* text-align: center; */
@@ -268,25 +281,26 @@ select.nav-select {
     }
     
 }
-
-
 /* footer css code  */
 .bottom-section {
     background-color: #454565;
     color: white;
+    max-width: 151.2rem;
+    height: 15.7rem;
+    padding: 0rem 18rem 0rem 18rem;
 }
 .bottom-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding-top: 5.3rem;
 }
 .content {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
+    width: 27.9rem;
+    height: 5rem;
 }
-.bottom-text {
-    padding-top: 1.4rem;
-}
+
 /* bottom responsive css  */
 
 @media only screen and (max-width: 1024px) {
@@ -308,10 +322,9 @@ select.nav-select {
 /* design css */
 .design-section{
     flex-direction: column;
-    
 }
-.design-section .design-text{
-    padding-top: 8rem;
+.design-text{
+    padding-top: 8.6rem;
 }
 .design-section .first-p{
     font-size: 4.8rem;
@@ -325,7 +338,7 @@ select.nav-select {
     color: #5C6167;
 }
 .design-section .design-img {
- padding: 8.6rem;
+ padding:  8.6rem;
  display: flex;
  gap: 3.3rem;
 }
@@ -367,17 +380,7 @@ select.nav-select {
         height: auto;
     } */
 }
-@media (min-width: 1024px) {
-    .heading-text {
-        font-size: 3rem; /* Even larger font size for very large screens */
-    }
-
-    .heading-color {
-        font-size: 2.5rem; /* Adjust accordingly */
-    }
-}
 /* design section2 css */
-
 .design-section .design-img span{
     background-color: #1b1e39d3;
     padding: 2rem 1.6rem 2rem 1.6rem;
@@ -416,6 +419,32 @@ select.nav-select {
     gap: 3rem;
     padding: 0rem 0rem 8.6rem 0rem;
 }
+@media (max-width:1024px) {
+    .design-section3.design-img3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        margin: 0 auto;
+    }
+    .para-text {
+        font-size: 1.4rem; 
+        line-height: 1.8rem;
+    }
+}
+@media (max-width: 576px) {
+    .design-section3 .design-img3 {
+        grid-template-columns: 1fr; /* Single column */
+        padding: 2rem 1rem;
+    }
+}
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .design-section3.design-img3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+}
 
 /* deals section css  */
 .deals-text1{
@@ -427,7 +456,6 @@ select.nav-select {
     display: flex;
     align-items: center;
 }
-
 .deals-text2{
     width: 63.6rem;
     height: 35rem;
@@ -464,7 +492,6 @@ select.nav-select {
 
 /* banner design css */
 .last-design{
-    padding-bottom: 8.6rem ;
     background-image: url('images/image_2024_11_20T12_13_55_568Z.png');
     background-color: #FECAD5;
     background-repeat: no-repeat;
@@ -480,6 +507,7 @@ select.nav-select {
     padding: 1rem 1.6rem 1rem 1.6rem;
     border-radius: 0.4rem;
     color: white;
+    background-size: cover;
 }
 h3{
     font-family: Mona Sans;
