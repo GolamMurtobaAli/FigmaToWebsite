@@ -2,12 +2,13 @@
 /* #F82B6F #2B89F8 #F8A82B #28F82B #8A2BF8 #2B2B2B */
 /* main css */
 *{
-    font-family: Lato;
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-   
 }
 /* global css class */
 .button-color a{
@@ -85,7 +86,6 @@ html{
 }
 /* header css */
 .header{
-    /* display: flex; */
     gap: 13.6rem;
     max-width: 151.2rem;
     height: auto;
@@ -98,12 +98,11 @@ html{
     display: flex;
     align-items: center;
     max-width: 151.2rem;
-    height: 10.4rem;
+    height: auto;
     justify-content: space-between;
     margin: auto;
 }
 .input-tag{
-    /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="F82B6F" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" fill="white"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>'); */
     background-image: url('ic_sharp-search.png');
     background-position: right 1rem center;
     background-repeat: no-repeat;
@@ -114,6 +113,7 @@ html{
     display: flex;
     font-size: 2rem;
     padding: 1rem 0.8rem 1rem 2rem;
+    margin: 1rem;
 }
 button{
     border: none;
@@ -126,16 +126,12 @@ button{
     display: flex;
     gap: 1.9rem;
 }
-.button {
-    padding-top: 1.3rem;
-}
 .second-navigation{
     display: flex;
     gap: 7rem;
     border-top: 0.06rem solid #BBC5D0;
     border-bottom: 0.06rem solid #BBC5D0;
     width: 151.2rem;
-    padding: 0.7rem;
     justify-content: center;
 }
 a{
@@ -197,13 +193,11 @@ p1{
 .hero-text {
     display: flex;
     align-items: baseline;
-    /* justify-content: center; */
     flex-direction: column;
     width: 84.1rem;
     height: 25.6rem;
-    padding-left: 10.5rem;
     line-height: 4rem;
-    padding-top: 7.4rem;
+  
 }
 .hero{
     display: flex;
@@ -213,10 +207,11 @@ p1{
     background-size: cover;
     background-position: center;
     margin: auto;
-    max-width: 151.2rem;
-    height: 63rem;
+    width: 100%;
+    height: 43rem;
     position: relative;
     overflow: hidden;
+    padding: 7.4rem 10.5rem 0rem 10.5rem;
 }
 .hero-btn img{
     height: 3.713rem;
@@ -276,7 +271,7 @@ select.nav-select {
 .bottom-section {
     background-color: #454565;
     color: white;
-    max-width: 151.2rem;
+    width: 100%;
     height: 15.7rem;
     padding: 0rem 18rem ;
     margin: auto;
@@ -292,8 +287,6 @@ select.nav-select {
     width: 27.9rem;
     height: 5rem;
 }
-
-
 /* design css */
 .design-section{
     flex-direction: column;
